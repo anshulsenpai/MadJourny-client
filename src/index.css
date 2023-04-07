@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --bg-primary: #0b003d;
+  --bg-secondary: #100635;
+  --bg-tertiary: #090133;
+  --btn-primary: #8f43ee;
+  --btn-secondary: #00235b;
+  --btn-tertiary: #27e1c1;
+
+  --black: #050505;
+  --text-primary: #ffffff;
+  --text-secondary: #bababa;
+  /* --card-bg-primary: #66347F;
+  --card-bg-secondary: #37306B; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: var(--black);
+  background: linear-gradient(
+    114deg,
+    var(--bg-primary) 10%,
+    var(--bg-secondary) 100%
+  );
+  font-family: "Oxanium", cursive;
+  color: var(--text-primary) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5,
+h6 {
+  font-size: 1.4rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 45rem) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  h5,
+  h6 {
+    font-size: 1.3rem;
+  }
+}
+
+.isActive {
+  transform: translateY(0) !important;
+}
+
+.mui--icons {
+  fill: var(--text-primary) !important;
+}
+
