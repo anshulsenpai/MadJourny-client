@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
-import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import { SliderData } from "../../APIs/Data";
 import { ButtonPrimary } from "../../utlis.styled";
 import { Arrow, Desc, Image, ImgContainer, InfoContainer, Slide, SliderContainer, Title, Wrapper } from "./Slider.styled";
@@ -37,13 +35,12 @@ const Slider = () => {
   return (
     <SliderContainer>
       <Arrow direction="left" onClick={() => handleArrow("back")}>
-        <ArrowBackIosOutlinedIcon className="mui--icons" />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {SliderData?.map((data) => (
           <Slide key={data.id}>
             <ImgContainer>
-              <Image src={data.img} />
+              <Image loading="lazy" src={data.img} alt={data.title} />
             </ImgContainer>
             <InfoContainer>
               <Title>{data.title}</Title>
@@ -54,7 +51,6 @@ const Slider = () => {
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleArrow("next")}>
-        <ArrowForwardIosOutlinedIcon />
       </Arrow>
     </SliderContainer>
   );

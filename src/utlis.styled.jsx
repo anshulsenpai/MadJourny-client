@@ -7,6 +7,7 @@ export const BrandText = styled(Link)`
   color: var(--text-primary);
   font-weight: 700;
   letter-spacing: 1px;
+
   @media screen and (max-width: 45rem) {
     font-size: 1.6rem;
   }
@@ -65,6 +66,11 @@ export const SectionTitle = styled.div`
   margin-bottom: 1rem;
   text-align: center;
 
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+
   h2 {
     margin-bottom: 1rem;
   }
@@ -73,5 +79,29 @@ export const SectionTitle = styled.div`
     font-size: 1.6rem;
     margin-bottom: 1rem;
     color: var(--text-secondary);
+  }
+`;
+
+
+
+export const ButtonTertiary = styled.button`
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease !important;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(114deg, var(--btn-primary) 20%, #2f58cd);
+
+  &:hover {
+    color: var(--text-primary);
+    box-shadow: rgba(92, 230, 255, 0.6) 0px 5px 25px;
+    background: linear-gradient(114deg, #6fffe7, #2f58cd);
   }
 `;

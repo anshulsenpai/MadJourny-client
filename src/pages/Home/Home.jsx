@@ -31,7 +31,7 @@ const Home = () => {
           {/* <img src={backgroundImage} alt="background image" /> */}
           <Item>
             <ItemImage>
-              <img src={psvr} alt="PS VR image" />
+              <img loading="lazy" src={psvr} alt="PS VR image" />
             </ItemImage>
             <ItemDetails>
               <h2>PlayStation VR</h2>
@@ -42,7 +42,7 @@ const Home = () => {
 
           <Item>
             <ItemImage>
-              <img src={ps5} alt="PS VR image" />
+              <img loading="lazy" src={ps5} alt="PS VR image" />
             </ItemImage>
             <ItemDetails>
               <h2>PlayStation 5</h2>
@@ -53,7 +53,7 @@ const Home = () => {
 
           <Item>
             <ItemImage>
-              <img src={ps5Joystick} alt="PS VR image" />
+              <img loading="lazy" src={ps5Joystick} alt="PS VR image" />
             </ItemImage>
             <ItemDetails>
               <h2>Accessories</h2>
